@@ -1,9 +1,12 @@
+import os
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext
-import os
 
-# Replace 'YOUR_TOKEN' with your bot's API token
-TOKEN = '7576787256:AAGTQB-riBvmAkz7XxhuIYBSBmz-IRh9K90'
+# Read the token from an environment variable
+TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+if not TOKEN:
+    raise ValueError("No TELEGRAM_BOT_TOKEN found in environment variables")
+
 received_messages = []
 counting = False
 
@@ -43,6 +46,7 @@ async def command2(update: Update, context: CallbackContext) -> None:
             file.write(f'URL: {url}, Title: {title}\n')
 
     print(f"Data saved to {file_path}")
+
 
 async def handle_message(update: Update, context: CallbackContext) -> None:
     if counting:
