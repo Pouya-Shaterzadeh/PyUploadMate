@@ -1,6 +1,6 @@
 # PyUploadMate
 ### Telegram Bot Integration :
-Users interact with the project via the File RS Bot on Telegram, providing URLs for their audio files and corresponding titles.
+Users interact with the project via the File Receiver/Sender Bot on Telegram, providing URLs for their audio files and corresponding titles.
 
 ### File Conversion :
 The received URLs and titles are processed by two Python scripts:
