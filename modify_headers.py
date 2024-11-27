@@ -6,3 +6,4 @@ def response(flow: http.HTTPFlow) -> None:
     flow.response.headers["X-Content-Type-Options"] = "nosniff"
 
 # Run => mitmdump -s modify_headers.py -p 8081 on command prompt <= to start the proxy server.
+
