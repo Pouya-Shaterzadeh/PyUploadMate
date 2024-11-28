@@ -21,6 +21,7 @@ ydl_opts = {
         'preferredcodec': 'wav',
         'preferredquality': '192',
     }],
+    'cookiefile': 'D:/cookies.txt'  # Install Cookie Editor extension on your device, login to your Intagram account and export all cookies to D:/cookies.txt path
 }
 
 def download_from_url(url):
