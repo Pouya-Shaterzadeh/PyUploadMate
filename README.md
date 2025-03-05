@@ -13,7 +13,7 @@ Handles and formats metadata for seamless uploading.
 Another Python script, powered by Selenium, takes the converted WAV files and metadata and automates the process of uploading them to the Believe.com platform.
 
 # How It Works
-- Step 1: Send the file URL and its title to the Telegram bot [File RS Bot](https://t.me/file_RS_bot).
+- Step 1: Send the file's URL and its title to the Telegram bot [File RS Bot](https://t.me/file_RS_bot).
 - Step 2: The bot forwards the data to the processing scripts.
 - Step 3: The file is converted to WAV format, and the title is prepared for upload.
 - Step 4: The automated uploader script logs into Believe.com and uploads the processed files and metadata.
